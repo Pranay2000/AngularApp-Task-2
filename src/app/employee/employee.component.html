@@ -1,0 +1,29 @@
+<div class="justify-content-center m-4">
+    <div class="card w-75">
+        <div class="card-header">
+            <h2>EMPLOYEES LIST </h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Department Name</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Manager Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of employees">
+                        <td>{{e.name}}</td>
+                        <td>{{e.salary}}</td>
+                        <td>{{e.deptName}}</td>
+                        <td>{{e.city}}</td>
+                        <td>{{e.manager}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

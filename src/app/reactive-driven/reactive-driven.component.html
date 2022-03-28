@@ -1,0 +1,100 @@
+<div class="card">
+    <div class="card-header">
+        <h3><strong>Reactive Driven Form</strong></h3>
+    </div>
+    <div class="card-body">
+        <div class="m-4">
+            <form class="form_class" [formGroup]="myForm" (ngSubmit)="formSubmit()">
+                <div class="row mb-5">
+                    <label class="col-2 form-label"><strong>Name:</strong></label>
+                    <div class="col-5">
+                        <input type="text" id="name" formControlName="name" placeholder="Enter your Name">
+                    </div>
+                    <div *ngIf="f['name'].invalid && (f['name'].touched || f['name'].dirty)">
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                            <strong>Name is required</strong>
+                        </div>
+                        <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+                            <strong>Name should contain atleast 3 characters</strong>
+                        </div>
+
+                        <div *ngIf="f['name'].errors && f['name'].errors['pattern']">
+                            <strong>Name can contain only alphabets</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-2 form-label"><strong>Email ID:</strong></label>
+                    <div class="col-5">
+                        <input type="email" id="email" formControlName="email" placeholder="Enter your Email ID">
+                    </div>
+                    <div *ngIf="f['email'].invalid && (f['email'].touched || f['email'].dirty)">
+                        <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                            <strong>Email ID is required</strong>
+                        </div>
+
+                        <div *ngIf="f['email'].errors && f['email'].errors['pattern']">
+                            <strong>Email ID should be in proper format</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-2 form-label"><strong>Mobile Number:</strong></label>
+                    <div class="col-5">
+                        <input type="number" id="phone" formControlName="phone" placeholder="Enter Mobile Number">
+                    </div>
+                    <div *ngIf="f['phone'].invalid && (f['phone'].touched || f['phone'].dirty)">
+                        <div *ngIf="f['phone'].errors && f['phone'].errors['required']">
+                            <strong>Mobile Number is required</strong>
+                        </div>
+                        <div *ngIf="f['phone'].errors && f['phone'].errors['pattern']">
+                            <strong>Mobile Number can contain numbers only</strong>
+                        </div>
+
+                        <div *ngIf="f['phone'].errors && f['phone'].errors['minlength']">
+                            <strong>Mobile Number should contain 10 digits</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-2 form-label"><strong>City:</strong></label>
+                    <div class="col-5">
+                        <input type="text" id="city" formControlName="city" placeholder="Enter your City">
+                    </div>
+                    <div *ngIf="f['city'].invalid && (f['city'].touched || f['city'].dirty)">
+                        <div *ngIf="f['city'].errors && f['city'].errors['required']">
+                            <strong>City is required</strong>
+                        </div>
+                        <div *ngIf="f['city'].errors && f['city'].errors['pattern']">
+                            <strong>City Name can contain only alphabets</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <label class="col-2 form-label"><strong>Pincode:</strong></label>
+                    <div class="col-5">
+                        <input type="number" id="pincode" formControlName="pincode" placeholder="Enter city pincode">
+                    </div>
+                    <div *ngIf="f['pincode'].invalid && (f['pincode'].touched || f['pincode'].dirty)">
+                        <div *ngIf="f['pincode'].errors && f['pincode'].errors['required']">
+                            <strong>Pincode is required</strong>
+                        </div>
+                        <div *ngIf="f['pincode'].errors && f['pincode'].errors['pattern']">
+                            <strong>Pincode can have only numbers</strong>
+                        </div>
+
+                        <div *ngIf="f['pincode'].errors && f['pincode'].errors['minlength']">
+                            <strong>Pincode should contain 6 digits</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

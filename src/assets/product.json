@@ -1,0 +1,29 @@
+[
+    {   "name": "OnePlus-8", 
+        "brand": "OnePlus", 
+        "model": "8th", 
+        "price": 45000, 
+        "availability": 5 
+    },
+
+    {   "name": "Iphone 13 Pro", 
+        "brand": "Apple", 
+        "model": "13 Pro", 
+        "price": 90000, 
+        "availability": 2 
+    },
+
+    {   "name": "Samsung S21", 
+        "brand": "Samsung", 
+        "model": "S21", 
+        "price": 75000, 
+        "availability": 3 
+    },
+
+    {   "name": "Huawei P30 Pro", 
+        "brand": "Huawei", 
+        "model": "P30 Pro", 
+        "price": 85000, 
+        "availability": 6 
+    }
+]

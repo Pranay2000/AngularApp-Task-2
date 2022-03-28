@@ -1,0 +1,27 @@
+<div class="justify-content-center m-4">
+    <div class="card w-75">
+        <div class="card-header">
+            <h2>PRODUCTS LIST </h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Product Name</th>
+                    <th>Company Name</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let prod of product">
+                        <td>{{prod.name}}</td>
+                        <td>{{prod.brand}}</td>
+                        <td>{{prod.model}}</td>
+                        <td>{{prod.price}}</td>
+                        <td>{{prod.availability}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

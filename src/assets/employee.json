@@ -1,0 +1,29 @@
+[
+    {   "name": "Pranay Mahajan", 
+        "salary": 80000, 
+        "deptName": "IT", 
+        "city": "New Delhi", 
+        "manager": "Kapoor" 
+    },
+    
+    {   "name": "Varun Gupta", 
+        "salary": 30000, 
+        "deptName": "Sales", 
+        "city": "New Delhi", 
+        "manager": "Sood" 
+    },
+
+    {   "name": "Raghav Bahri", 
+        "salary": 50000, 
+        "deptName": "IT", 
+        "city": "Chandigarh", 
+        "manager": "Gupta" 
+    },
+    
+    {   "name": "Dilpreet Singh", 
+        "salary": 70000, 
+        "deptName": "Sales", 
+        "city": "Mumbai", 
+        "manager": "Chauhan" 
+    }
+]

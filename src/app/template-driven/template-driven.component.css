@@ -1,0 +1,13 @@
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: lightgreen;
+}
+.card {
+    margin: 20px;
+    border: 2px solid black;
+}
